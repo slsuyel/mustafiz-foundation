@@ -2,7 +2,7 @@ import img from '/IMG-20240908-WA0004.jpg';
 const WhoWeAre = () => {
   return (
     <div className="container mx-auto">
-      <div className="pt-10 grid grid-cols-2 gap-2 ">
+      <div className="pt-10 grid md:grid-cols-2 gap-2 ">
         <div className=" p">
           <h1 className="font-bold text-5xl text-blue-950">Who We Are</h1>
 

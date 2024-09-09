@@ -7,9 +7,11 @@ import ScrollToTop from '../global/ScrollToTop';
 const MainLayout = () => {
   return (
     <ScrollToTop>
-      <p className="text-white font-semibold text-center text-lg py-4 bg-orange">
-        We will be good citizens for a better tomorrow, for a better world.
-      </p>
+      <div className=" bg-orange">
+        <p className="container mx-auto text-white sm:px-4 font-semibold text-center text-lg py-4 ">
+          We will be good citizens for a better tomorrow, for a better world.
+        </p>
+      </div>
       <Header />
       <Outlet />
       <Footer />
