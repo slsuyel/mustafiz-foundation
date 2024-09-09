@@ -1,7 +1,7 @@
 const Empowerment = () => {
   return (
     <div className="container mx-auto my-10">
-      <div className=" px-4 py-8 grid grid-cols-2">
+      <div className=" px-4 py-8 grid md:grid-cols-2">
         <img
           src="https://cdn.pixabay.com/photo/2020/02/17/11/58/africa-4856283_1280.jpg"
           alt="Education"

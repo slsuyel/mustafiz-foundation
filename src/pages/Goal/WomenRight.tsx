@@ -1,7 +1,7 @@
 const WomenRight = () => {
   return (
     <div className="container mx-auto my-10">
-      <div className=" px-4 py-8 grid grid-cols-2">
+      <div className=" px-4 py-8 md:grid grid-cols-2">
         <img
           src="https://img.freepik.com/free-photo/international-women-s-day-celebration-equal-right-digital-art-style_23-2151368411.jpg?size=626&ext=jpg&ga=GA1.1.383521631.1723015030&semt=ais_hybrid"
           alt="Education"

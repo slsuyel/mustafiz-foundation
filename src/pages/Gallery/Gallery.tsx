@@ -1,7 +1,7 @@
 const Gallery = () => {
   return (
     <div className="container mx-auto my-10">
-      <div className="grid md:grid-cols-3 gap-10">
+      <div className="grid md:grid-cols-3 gap-10 mx-4">
         <div className="relative aspect-w-16 aspect-h-9 my-4">
           <iframe
             className="w-full h-[300px]"
