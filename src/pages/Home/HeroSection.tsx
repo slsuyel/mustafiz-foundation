@@ -16,8 +16,9 @@ const HeroSection = () => {
           </h1>
 
           <p className="mt-4 max-w-lg text-white sm:text-xl/relaxed">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-            illo tenetur fuga ducimus numquam ea!
+            Mustafiz Foundation Inc. (MFI) is dedicated to enhancing community
+            health and well-being through inclusive and equitable support and
+            development programs.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4 text-center">
