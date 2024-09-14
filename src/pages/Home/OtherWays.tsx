@@ -1,6 +1,6 @@
 const OtherWays = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mt-14">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
         <div className="bg-orange p-5 text-center">
           <div className="p-5">

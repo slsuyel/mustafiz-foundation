@@ -48,7 +48,7 @@ const Stories = () => {
 
   return (
     <div className="bg-yellow-300 py-14 mx-auto">
-      <div className="container mx-auto">
+      <div className="w-10/12 mx-auto">
         <div className="py-10">
           <h1 className="font-bold text-4xl text-blue-950 mb-7 p-3 border-l-4 h-fit border-yellow-400">
             Refugee stories from around the world

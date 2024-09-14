@@ -2,7 +2,7 @@ import img from '/IMG-20240908-WA0004.jpg';
 const WhoWeAre = () => {
   return (
     <div className="container mx-auto">
-      <div className="pt-10 grid md:grid-cols-2 gap-2 ">
+      <div className="pt-10 grid md:grid-cols-2 gap-2  px-4">
         <div className=" p">
           <h1 className="font-bold text-5xl text-blue-950">Who We Are</h1>
 
@@ -37,7 +37,7 @@ const WhoWeAre = () => {
         </div>
       </div>
 
-      <div className="bg-orange py-20">
+      <div className="bg-orange py-20  px-4">
         <p className=" text-2xl font-semibold w-3/5 mx-auto text-center">
           Mustafiz Foundation is the Citizen Development and Social Engineering
           project having a campaign “Better Citizen for a Better Nation, We the
@@ -45,7 +45,7 @@ const WhoWeAre = () => {
         </p>
       </div>
 
-      <div>
+      <div className=" px-4">
         <h1 className="font-bold text-5xl text-blue-950 text-center my-10">
           What is out goal
         </h1>

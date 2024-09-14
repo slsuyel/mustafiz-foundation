@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const YourDonationMatter = () => {
   return (
     <div className="container mx-auto my-32">
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gap-6  px-4">
         <div>
           <img
             className="w-full"

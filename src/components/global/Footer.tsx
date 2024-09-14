@@ -3,7 +3,7 @@ import { Button } from '../ui/button';
 
 const Footer = () => {
   return (
-    <div className="bg-base-200  mt-12">
+    <div className="bg-base-200 w-full mx-auto  mt-12">
       <footer className="footer  text-base-content p-10 container mx-auto">
         <aside>
           <Link to={'/'} className="flex items-center justify-center">
@@ -121,7 +121,7 @@ const Footer = () => {
         </div>
       </footer>
 
-      <div className="bg-orange flex gap-20 py-4 text-white justify-center">
+      <div className="bg-orange flex gap-20 py-4 text-white justify-center px-4">
         <p className="">
           © Copyright 2024 Mustafiz Foundation Inc.. All rights reserved.
         </p>
