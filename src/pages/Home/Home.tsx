@@ -1,5 +1,6 @@
 import HeroSection from './HeroSection';
 import OtherWays from './OtherWays';
+import Stories from './Stories';
 import WeFollow from './WeFollow';
 import WhereWeWork from './WhereWeWork';
 import WhoWeAre from './WhoWeAre';
@@ -15,6 +16,7 @@ const Home = () => {
       <WhereWeWork />
       <YourDonationMatter />
       <Why />
+      <Stories />
       <OtherWays />
     </div>
   );
