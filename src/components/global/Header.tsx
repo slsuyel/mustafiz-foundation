@@ -181,6 +181,7 @@
 // export default Header;
 import { useState, useEffect } from 'react';
 import { Cancel01Icon, Menu01Icon } from 'hugeicons-react';
+
 import { Link } from 'react-router-dom';
 import { cn } from '@/utils/cn';
 
@@ -188,7 +189,6 @@ const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [openSubMenu, setOpenSubMenu] = useState<number | null>(null);
-  const [isMobile, setIsMobile] = useState(false); // New state to check if it's mobile
 
   useEffect(() => {
     const handleScroll = () => {
@@ -208,21 +208,17 @@ const Header = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Define mobile as width <= 768px
-    };
-
-    handleResize(); // Set initial value
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   const toggleSubMenu = (index: number) => {
-    setOpenSubMenu(prevIndex => (prevIndex === index ? null : index));
+    if (openSubMenu === index) {
+      setOpenSubMenu(null); // Close submenu if it's already open
+    } else {
+      setOpenSubMenu(index); // Open the clicked submenu
+    }
+  };
+
+  const handleMenuClick = () => {
+    setIsOpenMenu(false); // Close the mobile menu
+    setOpenSubMenu(null); // Close any open submenu
   };
 
   const menuItems = [
@@ -241,10 +237,7 @@ const Header = () => {
       ],
     },
     { label: 'WE FOLLOW', slug: 'we-follow' },
-    {
-      label: 'WHERE WE WORK',
-      slug: 'where-we-work',
-    },
+    { label: 'WHERE WE WORK', slug: 'where-we-work' },
     { label: 'GALLERY', slug: 'gallery' },
     { label: 'JOIN OUR TEAM', slug: 'join-us' },
     { label: 'DONATE', slug: 'donate' },
@@ -286,42 +279,56 @@ const Header = () => {
             )}
           >
             {menuItems.map((item, index) => (
-              <div
-                key={index}
-                className="relative group"
-                onClick={() => isMobile && toggleSubMenu(index)} // Toggle submenu for mobile
-                onMouseEnter={() => !isMobile && setOpenSubMenu(index)} // Hover for desktop
-                onMouseLeave={() => !isMobile && setOpenSubMenu(null)} // Close on hover-out for desktop
-              >
-                <Link
-                  to={`/${item.slug || '#'}`}
-                  onClick={() => setIsOpenMenu(false)}
-                  className={`text-lg font-medium md:font-semibold relative flex flex-col group hover:text-orange capitalize ${
-                    item.label == 'DONATE' &&
-                    'bg-orange text-white px-6 py-2 hover:text-white rounded-sm'
-                  }`}
-                >
-                  <span>
-                    {item.label}{' '}
-                    {item.submenu && (
-                      <i className="fa-solid fa-chevron-down"></i>
-                    )}{' '}
-                  </span>
-                  <span
-                    className={cn(
-                      'h-[1px] bg-white w-0 group-hover:w-full transition-all duration-300',
-                      isScrolled && 'bg-zinc-700'
-                    )}
-                  ></span>
-                </Link>
+              <div key={index} className="relative">
+                {item.submenu ? (
+                  // Menu items with a submenu
+                  <button
+                    onClick={() => toggleSubMenu(index)}
+                    className={`text-lg font-medium md:font-semibold relative flex flex-col group capitalize ${
+                      item.label === 'DONATE' &&
+                      'bg-orange text-white px-6 py-2 hover:text-white rounded-sm'
+                    }`}
+                  >
+                    <span>
+                      {item.label}{' '}
+                      {item.submenu && (
+                        <i className="fa-solid fa-chevron-down ml-2"></i>
+                      )}
+                    </span>
+                    <span
+                      className={cn(
+                        'h-[1px] bg-white w-0 group-hover:w-full transition-all duration-300',
+                        isScrolled && 'bg-zinc-700'
+                      )}
+                    ></span>
+                  </button>
+                ) : (
+                  // Menu items without a submenu
+                  <Link
+                    to={`/${item.slug || '#'}`}
+                    onClick={handleMenuClick} // Close menu and submenu after click
+                    className={`text-lg font-medium md:font-semibold relative flex flex-col group capitalize ${
+                      item.label === 'DONATE' &&
+                      'bg-orange text-white px-6 py-2 hover:text-white rounded-sm'
+                    }`}
+                  >
+                    <span>{item.label}</span>
+                    <span
+                      className={cn(
+                        'h-[1px] bg-white w-0 group-hover:w-full transition-all duration-300',
+                        isScrolled && 'bg-zinc-700'
+                      )}
+                    ></span>
+                  </Link>
+                )}
 
                 {item.submenu && (
                   <div
                     className={cn(
-                      'absolute top-full left-0 bg-orange shadow-md p-4 mt-2 transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:visible z-[998] text-nowrap ',
+                      'absolute top-full left-0 bg-orange shadow-md p-4 mt-2 transition-all duration-300 z-[998] text-nowrap',
                       openSubMenu === index
                         ? 'visible opacity-100'
-                        : 'invisible'
+                        : 'invisible opacity-0'
                     )}
                   >
                     <div className="flex flex-col gap-2">
@@ -329,7 +336,8 @@ const Header = () => {
                         <Link
                           key={subIndex}
                           to={`/${subItem.slug}`}
-                          className="text-md text-white "
+                          onClick={handleMenuClick} // Close menu and submenu after click
+                          className="text-md text-white"
                         >
                           {subItem.label}
                         </Link>
@@ -341,7 +349,7 @@ const Header = () => {
             ))}
           </div>
 
-          {/* menu icon */}
+          {/* Menu Icon */}
           <button
             className="p-1 md:hidden"
             onClick={() => setIsOpenMenu(!isOpenMenu)}
@@ -367,7 +375,7 @@ const Header = () => {
 
           {isOpenMenu && (
             <div
-              onClick={() => setIsOpenMenu(false)}
+              onClick={handleMenuClick}
               className="fixed inset-0 z-[998] bg-black opacity-25 md:hidden"
             ></div>
           )}
