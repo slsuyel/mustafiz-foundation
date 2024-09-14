@@ -6,3 +6,19 @@
     --radius: 0.5rem;
   }
 }
+
+.stories {
+  .slick-dots li {
+    width: 160px;
+  }
+
+  .slick-dots .slick-active {
+    .slicccc---str {
+      background-color: #000000;
+      text-align: start;
+      padding: 5px 20px;
+      color: white;
+      border-left: 2px solid white;
+    }
+  }
+}
