@@ -1,10 +1,9 @@
-import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
 const YourDonationMatter = () => {
   return (
     <div className="container mx-auto my-32">
-      <div className="flex items-center flex-wrap">
+      <div className="grid md:grid-cols-2 gap-6">
         <div>
           <img
             className="w-full"
@@ -40,13 +39,13 @@ const YourDonationMatter = () => {
               “There is one thing we do know: that man is here for the sake of
               other men.”
             </p>
-            <Button size={'xlg'}>
-              <Link to="/donate" className="text-xl">
-                {' '}
-                <i className="fa-solid fa-circle-dollar-to-slot me-2"></i>{' '}
-                Donate
-              </Link>
-            </Button>
+            <Link
+              to="/donate"
+              className="text-xl border bg-orange p-2 px-5 rounded-sm text-white hover:bg-black"
+            >
+              {' '}
+              <i className="fa-solid fa-circle-dollar-to-slot me-2"></i> Donate
+            </Link>
           </div>
         </div>
       </div>

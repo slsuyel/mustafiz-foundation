@@ -3,6 +3,7 @@ import OtherWays from './OtherWays';
 import WeFollow from './WeFollow';
 import WhereWeWork from './WhereWeWork';
 import WhoWeAre from './WhoWeAre';
+import Why from './Why';
 import YourDonationMatter from './YourDonationMatter';
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <WeFollow />
       <WhereWeWork />
       <YourDonationMatter />
+      <Why />
       <OtherWays />
     </div>
   );
