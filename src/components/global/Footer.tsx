@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Button } from '../ui/button';
 
 const Footer = () => {
   return (
@@ -70,12 +69,12 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="input input-bordered w-full md:w-64 mb-2 md:mb-0 md:me-2"
+              className="input w-full md:w-64 mb-2 md:mb-0 md:me-2 px-5 py-2"
             />
-            <Button size={'xlg'}>
+            <button className="px-5 py-2 bg-orange text-white text-xl hover:bg-black rounded-sm">
               {' '}
               <p className=""> Subscribe</p>
-            </Button>
+            </button>
           </form>
           <div>
             <h4 className="mb-2">Follow us on</h4>

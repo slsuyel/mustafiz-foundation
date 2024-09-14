@@ -1,5 +1,3 @@
-import { Button } from '@/components/ui/button';
-
 const JoinUs = () => {
   return (
     <div className="container mx-auto my-10">
@@ -85,7 +83,9 @@ const JoinUs = () => {
                   className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm"
                 />
               </div>
-              <Button> Submit</Button>
+              <button className="px-5 py-3 bg-orange text-white text-xl hover:bg-black rounded-sm">
+                Submit
+              </button>
             </form>
             <div className="bg-yellow-400 p-4 rounded-md">
               <p className=" my-auto  text-xl p-5">
