@@ -1,16 +1,12 @@
 import { Link } from 'react-router-dom';
-
+import logo from '/logo-icon.png';
 const Footer = () => {
   return (
     <div className="bg-base-200 w-full mx-auto  mt-12">
       <footer className="footer  text-base-content p-10 container mx-auto">
         <aside>
           <Link to={'/'} className="flex items-center justify-center">
-            <img
-              src="https://old.mustafiz.org/wp-content/uploads/2023/05/5-4-copy-1.png"
-              width={80}
-              alt="Logo"
-            />
+            <img src={logo} width={80} alt="Logo" />
             <div className="ms-2">
               <h2 className="font-bold text-xl text-orange">
                 Mustafiz Foundation Inc.

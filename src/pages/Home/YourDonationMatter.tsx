@@ -16,7 +16,7 @@ const YourDonationMatter = () => {
 
         <div>
           <div className="ms-5">
-            <h1 className="font-bold text-5xl text-blue-950 mb-7 ">
+            <h1 className="font-bold text-2xl xl:text-5xl text-blue-950 mb-7 ">
               Your donation matter
             </h1>
 

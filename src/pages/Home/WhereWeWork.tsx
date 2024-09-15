@@ -5,7 +5,7 @@ import img3 from '/IMG-20240908-WA0006.jpg';
 const WhereWeWork = () => {
   return (
     <div className="my-20 container mx-auto px-4 ">
-      <h1 className="font-bold text-5xl text-blue-950 mb-7 p-3 text-center">
+      <h1 className="font-bold text-2xl xl:text-5xl text-blue-950 mb-7 p-3 text-center">
         Where We Work
       </h1>
 

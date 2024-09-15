@@ -8,7 +8,9 @@ const Empowerment = () => {
           className="w-full h-auto object-cover rounded-lg shadow-md mb-8"
         />
         <div className=" p-6 rounded-lg ">
-          <h1 className="font-bold text-5xl text-blue-950 mb-4">Empowerment</h1>
+          <h1 className="font-bold text-2xl xl:text-5xl text-blue-950 mb-4">
+            Empowerment
+          </h1>
           <p className=" text-gray-700 leading-relaxed text-xl">
             Vulnerable people in our community don’t have control over important
             choices that affect their lives. They don’t have place to live, lack

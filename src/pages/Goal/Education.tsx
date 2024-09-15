@@ -8,7 +8,9 @@ const Education = () => {
           className="w-full h-auto object-cover rounded-lg shadow-md mb-8"
         />
         <div className=" p-6 rounded-lg ">
-          <h1 className="font-bold text-5xl text-blue-950 mb-4">Education</h1>
+          <h1 className="font-bold text-2xl xl:text-5xl text-blue-950 mb-4">
+            Education
+          </h1>
           <p className=" text-gray-700 leading-relaxed text-xl">
             Education is the power and pillar of success, and we will strive to
             provide quality and meaningful education to young children with

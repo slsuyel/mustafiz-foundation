@@ -4,7 +4,9 @@ const WhoWeAre = () => {
     <div className="container mx-auto">
       <div className="pt-10 grid md:grid-cols-2 gap-2  px-4">
         <div className=" p">
-          <h1 className="font-bold text-5xl text-blue-950">Who We Are</h1>
+          <h1 className="font-bold text-2xl xl:text-5xl text-blue-950">
+            Who We Are
+          </h1>
 
           <div className="my-10">
             <p className="mb-10">
@@ -46,7 +48,7 @@ const WhoWeAre = () => {
       </div>
 
       <div className=" px-4">
-        <h1 className="font-bold text-5xl text-blue-950 text-center my-10">
+        <h1 className="font-bold text-2xl xl:text-5xl text-blue-950 text-center my-10">
           What is out goal
         </h1>
 

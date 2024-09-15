@@ -11,7 +11,7 @@ const JoinUs = () => {
         </div>
 
         <div>
-          <h1 className="font-bold text-5xl text-blue-950 mb-7 p-3 text-center">
+          <h1 className="font-bold text-2xl xl:text-5xl text-blue-950 mb-7 p-3 text-center">
             JOIN OUR TEAM
           </h1>
 

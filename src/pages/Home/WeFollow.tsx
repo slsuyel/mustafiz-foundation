@@ -2,7 +2,9 @@ const WeFollow = () => {
   return (
     <div className="container mx-auto px-5">
       <div className="my-10 container mx-auto ">
-        <h1 className="font-bold text-5xl text-blue-950 mb-7 p-3">We Follow</h1>
+        <h1 className="font-bold text-2xl xl:text-5xl text-blue-950 mb-7 p-3">
+          We Follow
+        </h1>
 
         <div className="grid md:grid-cols-3 shadow my-5 gap-10 bg-yellow-50">
           <div className="">
@@ -14,7 +16,7 @@ const WeFollow = () => {
           </div>
           <div className="col-span-2 flex items-center">
             <div className="text-center p-5">
-              <i className="fa-solid fa-quote-left text-5xl text-orange"></i>
+              <i className="fa-solid fa-quote-left text-2xl xl:text-5xl text-orange"></i>
               <p className="my-3">
                 “Strange is our situation here on Earth. Each of us comes for a
                 short visit, not knowing why, yet sometimes seeming to divine a
@@ -43,7 +45,7 @@ const WeFollow = () => {
           </div>
           <div className="col-span-2 flex items-center">
             <div className="text-center p-5">
-              <i className="fa-solid fa-quote-left text-5xl text-orange"></i>
+              <i className="fa-solid fa-quote-left text-2xl xl:text-5xl text-orange"></i>
               <p className="my-3">
                 “In pursuit of my engineering career I had to study Ethics and
                 Technology in college but there is no curriculum in school for
