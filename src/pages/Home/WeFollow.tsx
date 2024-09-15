@@ -10,7 +10,7 @@ const WeFollow = () => {
           <div className="">
             <img
               className="w-[450px]"
-              src="https://old.mustafiz.org/wp-content/uploads/2024/01/Screenshot_2-768x766-1.webp"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_lyF-1PIiFi0XlRSOvvXVU8UbsRP0nCwwAw&s"
               alt=""
             />
           </div>
@@ -39,7 +39,7 @@ const WeFollow = () => {
           <div className="text-center">
             <img
               className="w-[450px]"
-              src="https://old.mustafiz.org/wp-content/uploads/2024/01/Screenshot_6-e1681719028711-768x766-1.webp"
+              src="https://media.licdn.com/dms/image/D4E03AQG6LhkAqXY3vg/profile-displayphoto-shrink_200_200/0/1674835126621?e=2147483647&v=beta&t=r7xspRo1qNsNv9SqglqItO5Zk0km6VQ-fQqbTWtKgtg"
               alt=""
             />
           </div>

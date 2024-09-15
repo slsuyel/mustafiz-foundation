@@ -14,9 +14,9 @@ const WhereWeWork = () => {
         <div className="text-center  space-y-4  text-white">
           <div className=" flex justify-center">
             <img
-              src="https://old.mustafiz.org/wp-content/uploads/elementor/thumbs/united-states-of-america-e1681629870703-qb6ketr9pzfs1zvu8jllnwpi4v864shjjlvjklhww2.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/800px-Flag_of_the_United_States.png"
               alt="USA"
-              className="mx-auto md:mx-0 text-center pt-4"
+              className="mx-auto md:mx-0 text-center pt-4 w-[50px]"
             />
           </div>
           <div className="px-4">
@@ -57,9 +57,9 @@ const WhereWeWork = () => {
         <div className="text-center   text-white">
           <div className=" flex justify-center">
             <img
-              src="https://old.mustafiz.org/wp-content/uploads/elementor/thumbs/united-states-of-america-e1681629870703-qb6ketr9pzfs1zvu8jllnwpi4v864shjjlvjklhww2.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/800px-Flag_of_the_United_States.png"
               alt="USA"
-              className="mx-auto md:mx-0 text-center pt-4"
+              className="mx-auto md:mx-0 text-center pt-4 w-[50px]"
             />
           </div>
           <div className="px-4">
@@ -83,9 +83,9 @@ const WhereWeWork = () => {
         <div className="text-center  space-y-4  text-white">
           <div className=" flex justify-center">
             <img
-              src="https://old.mustafiz.org/wp-content/uploads/elementor/thumbs/bangladesh-e1681631451292-qb6ketr9pzft2tr1ycj839i05k5dp333oa5fo8tnuc.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/2560px-Flag_of_Bangladesh.svg.png"
               alt="USA"
-              className="mx-auto md:mx-0 text-center pt-4"
+              className="mx-auto md:mx-0 text-center pt-4 w-[50px]"
             />
           </div>
           <div className="px-4">
