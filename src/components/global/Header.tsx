@@ -77,10 +77,12 @@ const Header = () => {
               <img src={logo} width={70} alt="Logo" className="" />
 
               <div className="ms-2">
-                <h2 className="font-bold text-base xl:text-lg text-orange">
+                <h2 className="text-nowrap font-bold text-base xl:text-lg text-orange">
                   Mustafiz Foundation Inc.
                 </h2>
-                <p className="text-base xl:text-lg">Frontiers for Humanity</p>
+                <p className="text-nowrap text-base xl:text-lg">
+                  Frontiers for Humanity
+                </p>
               </div>
             </Link>
           </div>
@@ -100,7 +102,7 @@ const Header = () => {
                   // Menu items with a submenu
                   <button
                     onClick={() => toggleSubMenu(index)}
-                    className={`text-sm xl:text-lg font-medium md:font-semibold relative flex flex-col group capitalize ${
+                    className={`text-sm md:text-sm  xl:text-lg font-medium md:font-semibold relative flex flex-col group capitalize ${
                       item.label === 'DONATE' &&
                       'bg-orange text-white px-2 xl:px-6 py-2 hover:text-white rounded-sm'
                     }`}
