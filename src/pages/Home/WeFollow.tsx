@@ -1,6 +1,6 @@
 const WeFollow = () => {
   return (
-    <div className="container mx-auto px-5">
+    <div className="container mx-auto px-5 mt-48 md:mt-7 ">
       <div className="my-10 container mx-auto ">
         <h1 className="font-bold text-2xl xl:text-5xl text-blue-950 mb-7 p-3">
           We Follow
