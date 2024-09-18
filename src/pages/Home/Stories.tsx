@@ -72,7 +72,7 @@ const Stories = () => {
                           ></i>{' '}
                           {d.text1}{' '}
                         </p>
-                        <div className="flex justify-between px-5">
+                        <div className="flex justify-between px-5 flex-wrap md:flex-nowrap">
                           <div className="ms-10">
                             <p className="text-gray-600">{d.text2}</p>
                             <p className="mt-4 font-semibold text-lg text-gray-800">
