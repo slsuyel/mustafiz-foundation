@@ -9,7 +9,7 @@ const WeFollow = () => {
         <div className="grid md:grid-cols-3 shadow my-5 gap-10 bg-yellow-50">
           <div className="">
             <img
-              className="w-[450px]"
+              className="w-[450px] "
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_lyF-1PIiFi0XlRSOvvXVU8UbsRP0nCwwAw&s"
               alt=""
             />

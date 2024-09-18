@@ -63,27 +63,29 @@ const Stories = () => {
               {data.map((d, index) => (
                 <div key={index} className="p-6 rounded-lg relative mb-12">
                   <div className="flex items-start space-x-4">
-                    <img
-                      src="https://www.rescue.org/sites/default/files/styles/square_1x1_200px_wide/public/2022-11/pic_3.png?itok=iX2VpiRf"
-                      alt={d.name}
-                      className="w-40 h-40 object-cover translate-y-[0] hidden sm:block sm:translate-y-[74%] -translate-x-[0%] sm:-translate-x-[-80%] "
-                    />
                     <div className="flex gap-7 flex-wrap sm:flex-nowrap">
-                      <div>
-                        <i
-                          className="fa-solid fa-quote-left text-7xl text-white mb-0"
-                          aria-hidden="true"
-                        ></i>
-                      </div>
-                      <div className="bg-white p-5 pb-20 rounded-sm">
-                        <p className="pb-10 italic text-xl my-5 mb-15">
-                          {d.text1}
+                      <div className="bg-white p-10 rounded-sm">
+                        <p className=" italic text-xl py-5">
+                          <i
+                            className="fa-solid fa-quote-left mb-0 text-5xl text-orange"
+                            aria-hidden="true"
+                          ></i>{' '}
+                          {d.text1}{' '}
                         </p>
-                        <div className="ms-10">
-                          <p className="text-gray-600">{d.text2}</p>
-                          <p className="mt-4 font-semibold text-lg text-gray-800">
-                            Meet {d.name}
-                          </p>
+                        <div className="flex justify-between px-5">
+                          <div className="ms-10">
+                            <p className="text-gray-600">{d.text2}</p>
+                            <p className="mt-4 font-semibold text-lg text-gray-800">
+                              {d.name}
+                            </p>
+                            <p>{d.country}</p>
+                          </div>
+
+                          <img
+                            src="https://www.rescue.org/sites/default/files/styles/square_1x1_200px_wide/public/2022-11/pic_3.png?itok=iX2VpiRf"
+                            alt={d.name}
+                            className="w-40 h-40 object-cover   "
+                          />
                         </div>
                       </div>
                     </div>

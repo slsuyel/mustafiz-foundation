@@ -9,15 +9,7 @@ const Why = () => {
         </div>
 
         <div className="flex mb-20 justify-center flex-wrap sm:justify-start sm:flex-nowrap">
-          <div className="w-full sm:w-auto">
-            <img
-              className="w-full h-auto object-cover sm:w-[400px] sm:h-[400px]" // Adjust image size and responsiveness
-              src="https://www.rescue.org/sites/default/files/styles/square_1x1_400px_wide/public/quote/19322/story-image/yeramimalek_selfievideo_2021.11.05_16x9_thumbnail.jpg?itok=ZV7kh1i0"
-              alt="Rami Malek supporting the IRC"
-            />
-          </div>
-
-          <div className="bg-white w-5/6 translate-y-[10%] -translate-x-[2%] flex items-center">
+          <div className="bg-white w-5/6  flex items-center">
             <div className="flex px-8 py-10">
               <div>
                 <i
@@ -36,6 +28,13 @@ const Why = () => {
                 <h4 className="text-xl">Actor and IRC Ambassador</h4>
               </div>
             </div>
+          </div>
+          <div className="w-full sm:w-auto">
+            <img
+              className="w-full h-auto object-cover sm:w-[400px] sm:h-[400px]" // Adjust image size and responsiveness
+              src="https://www.rescue.org/sites/default/files/styles/square_1x1_400px_wide/public/quote/19322/story-image/yeramimalek_selfievideo_2021.11.05_16x9_thumbnail.jpg?itok=ZV7kh1i0"
+              alt="Rami Malek supporting the IRC"
+            />
           </div>
         </div>
       </div>
