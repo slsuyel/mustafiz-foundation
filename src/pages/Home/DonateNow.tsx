@@ -1,6 +1,6 @@
 const DonateNow = () => {
   return (
-    <div className="container mx-auto my-10  sm:h-screen md:h-[650px] ">
+    <div className="container mx-auto my-10  h-screen md:h-[650px] ">
       <div className="px-4 my-8 relative h-[450px] flex justify-center flex-wrap md:flex-nowrap">
         <img
           className="h-full w-full object-cover"
