@@ -1,3 +1,4 @@
+import DonateNow from './DonateNow';
 import HeroSection from './HeroSection';
 import OtherWays from './OtherWays';
 import Stories from './Stories';
@@ -12,6 +13,7 @@ const Home = () => {
     <div className="my-10">
       <HeroSection />
       <WhoWeAre />
+      <DonateNow />
       <WeFollow />
       <WhereWeWork />
       <YourDonationMatter />

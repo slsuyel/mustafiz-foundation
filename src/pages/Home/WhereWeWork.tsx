@@ -1,5 +1,4 @@
-import img1 from '/IMG-20240908-WA0005.jpg';
-import img2 from '/IMG-20240908-WA0006.jpg';
+import img2 from '/IMG-20240908-WA0005.jpg';
 import img3 from '/IMG-20240908-WA0006.jpg';
 
 const WhereWeWork = () => {
@@ -9,39 +8,6 @@ const WhereWeWork = () => {
         Where We Work
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2  items-center bg-orange">
-        {/* USA Section */}
-        <div className="text-center  space-y-4  text-white">
-          <div className=" flex justify-center">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/800px-Flag_of_the_United_States.png"
-              alt="USA"
-              className="mx-auto md:mx-0 text-center pt-4 w-[50px]"
-            />
-          </div>
-          <div className="px-4">
-            <p className="font-semibold text-lg">USA</p>
-            <p>New York, Buffalo, Dallas, Texas and San Diego (California)</p>
-            <p>
-              Mustafiz Foundation Inc (MFI) is committed to strive supporting
-              refugees, asylees, victims of human trafficking, survivors of
-              torture, and other immigrants to rebuild their lives. Our promise
-              is to work with government bodies, civil society actors, and local
-              volunteers to help refugees and immigrants integrate and
-              contribute to our communities.
-            </p>
-          </div>
-        </div>
-
-        {/* Image Section */}
-        <div className="flex justify-center md:justify-end">
-          <img
-            src={img1}
-            alt="Mustafiz Foundation USA"
-            className=" shadow-lg"
-          />
-        </div>
-      </div>
       <div className="grid grid-cols-1 md:grid-cols-2  items-center bg-orange">
         {/* USA Section */}
 
