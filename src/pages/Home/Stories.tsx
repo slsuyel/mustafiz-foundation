@@ -5,9 +5,9 @@ const data = [
     name: 'Fernanda',
     country: 'Japan',
     text1:
-      'It’s been so horrible, reading the news and wondering where family members are. All my relatives are in eastern Ukraine and I am afraid of what could happen to them.',
+      'It’s been so horrible, reading the news and wondering where family members are. ',
     text2:
-      'At 27 years old, Fernanda Levin was forced to leave behind her parents, siblings, and home simply so that she could safely be herself.',
+      'At 27 years old, Fernanda Levin was forced to leave behind her parents, siblings, and home',
   },
   {
     name: 'Ahmed',
@@ -30,7 +30,7 @@ const Stories = () => {
   const settings = {
     customPaging: function (i: number) {
       return (
-        <div className="text-2xl text-start slicccc---str border-black border-l-2 px-4 ">
+        <div className=" py-1 my-5 md:text-2xl text-start slicccc---str  border-black border-l-2 px-1 md:px-4 ">
           <div className="">
             <p className=" block">{data[i].name}</p>
             <p className="font-semibold block">{data[i].country}</p>
@@ -48,7 +48,7 @@ const Stories = () => {
 
   return (
     <div className="bg-yellow-300 py-14 mx-auto">
-      <div className="w-10/12 mx-auto">
+      <div className="w-[90%] md:w-10/12 mx-auto">
         <div className="py-10">
           <h1 className="font-bold text-4xl text-blue-950 mb-7 p-3 border-l-4 h-fit border-yellow-400">
             Refugee stories from around the world
@@ -61,11 +61,14 @@ const Stories = () => {
           <div className="w-full sm:w-3/5 mx-auto">
             <Slider {...settings} className="stories  mx-auto">
               {data.map((d, index) => (
-                <div key={index} className="p-6 rounded-lg relative mb-12">
+                <div
+                  key={index}
+                  className="p-3 md:p-6 rounded-lg relative mb-12"
+                >
                   <div className="flex items-start space-x-4">
                     <div className="flex gap-7 flex-wrap sm:flex-nowrap">
                       <div className="bg-white p-10 rounded-sm">
-                        <p className=" italic text-xl py-5">
+                        <p className=" italic text-xl md:py-5">
                           <i
                             className="fa-solid fa-quote-left mb-0 text-5xl text-orange"
                             aria-hidden="true"

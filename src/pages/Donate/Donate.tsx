@@ -3,7 +3,7 @@ const Donate = () => {
     <div className="container mx-auto py-10 my-10 h-[100vh]">
       <div className="grid md:grid-cols-3 gap-8">
         <div className=" rounded-lg col-span-2">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6 px-3 md:p-0">
             Your gift has a significant impact on others' lives.
           </h2>
           <div className="bg-gray-100 p-5">

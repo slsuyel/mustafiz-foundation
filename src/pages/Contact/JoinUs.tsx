@@ -20,64 +20,69 @@ const JoinUs = () => {
               <div>
                 <label
                   htmlFor="first-name"
-                  className="block text-lg font-semibold"
+                  className="block text-lg md:font-semibold"
                 >
                   First Name
                 </label>
                 <input
                   id="first-name"
                   type="text"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500"
+                  className="border border-gray-300 rounded-lg px-4 py-2 w-full"
                 />
               </div>
               <div>
                 <label
                   htmlFor="last-name"
-                  className="block text-lg font-semibold"
+                  className="block text-lg md:font-semibold"
                 >
                   Last Name
                 </label>
                 <input
                   id="last-name"
                   type="text"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500"
+                  className="border border-gray-300 rounded-lg px-4 py-2 w-full"
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-lg font-semibold">
+                <label
+                  htmlFor="email"
+                  className="block text-lg md:font-semibold"
+                >
                   Email
                 </label>
                 <input
                   id="email"
                   type="email"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500"
+                  className="border border-gray-300 rounded-lg px-4 py-2 w-full"
                 />
               </div>
               <div>
-                <label htmlFor="phone" className="block text-lg font-semibold">
+                <label
+                  htmlFor="phone"
+                  className="block text-lg md:font-semibold"
+                >
                   Phone
                 </label>
                 <input
                   id="phone"
                   type="tel"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500"
+                  className="border border-gray-300 rounded-lg px-4 py-2 w-full"
                 />
               </div>
               <div>
                 <label
                   htmlFor="cover-letter"
-                  className="block text-lg font-semibold"
+                  className="block text-lg md:font-semibold"
                 >
                   Cover Letter
                 </label>
                 <textarea
                   id="cover-letter"
-                  rows={4}
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500"
+                  className="border border-gray-300 rounded-lg px-4 py-2 w-full"
                 />
               </div>
               <div>
-                <label className="block text-lg font-semibold">Resume</label>
+                <label className="block text-lg md:font-semibold">Resume</label>
                 <input
                   type="file"
                   className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm"

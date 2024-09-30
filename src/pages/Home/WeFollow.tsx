@@ -32,7 +32,7 @@ const WeFollow = () => {
             key={item.id}
             className="grid md:grid-cols-3 shadow my-5 gap-10 bg-yellow-50"
           >
-            <div className="text-center">
+            <div className=" ">
               <img className="w-[450px]" src={item.imgSrc} alt={item.author} />
             </div>
             <div className="col-span-2 flex items-center">

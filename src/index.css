@@ -12,6 +12,10 @@
     width: 160px;
   }
 
+  .slick-dots {
+    bottom: -85px;
+  }
+
   .slick-dots .slick-active {
     .slicccc---str {
       background-color: #000000;
