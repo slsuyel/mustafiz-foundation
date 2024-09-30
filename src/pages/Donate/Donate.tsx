@@ -1,8 +1,8 @@
 const Donate = () => {
   return (
-    <div className="container mx-auto py-10 my-10 h-[100vh]">
+    <div className="container mx-auto py-10 my-10 min-h-[100vh]">
       <div className="grid md:grid-cols-3 gap-8">
-        <div className=" rounded-lg col-span-2">
+        <div className=" rounded-lg md:col-span-2">
           <h2 className="text-3xl font-bold mb-6 px-3 md:p-0">
             Your gift has a significant impact on others' lives.
           </h2>
@@ -39,7 +39,7 @@ const Donate = () => {
 
         <form
           acceptCharset="utf-8"
-          className="bg-white shadow-lg rounded-lg p-8"
+          className="bg-white shadow-lg rounded-lg p-8 w-full"
         >
           <input type="hidden" name="name" value="Donation" />
           <input id="fprice" type="hidden" name="price" value="0" />
