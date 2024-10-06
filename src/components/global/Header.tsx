@@ -46,7 +46,7 @@ const Header = () => {
       label: 'WHO WE ARE',
       submenu: [
         { label: 'Board of Directors', slug: 'board-of-directors' },
-        { label: 'WE FOLLOW', slug: 'we-follow' },
+        { label: 'We Follow', slug: 'we-follow' },
       ],
     },
     {
