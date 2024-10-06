@@ -44,7 +44,10 @@ const Header = () => {
   const menuItems = [
     {
       label: 'WHO WE ARE',
-      submenu: [{ label: 'Board of Directors', slug: 'board-of-directors' }],
+      submenu: [
+        { label: 'Board of Directors', slug: 'board-of-directors' },
+        { label: 'WE FOLLOW', slug: 'we-follow' },
+      ],
     },
     {
       label: 'WHAT IS OUR GOAL',
@@ -56,7 +59,7 @@ const Header = () => {
         { label: 'Financial Freedom', slug: 'goal/financial-freedom' },
       ],
     },
-    { label: 'WE FOLLOW', slug: 'we-follow' },
+
     { label: 'WHERE WE WORK', slug: 'where-we-work' },
     { label: 'GALLERY', slug: 'gallery' },
     { label: 'JOIN OUR TEAM', slug: 'join-us' },
