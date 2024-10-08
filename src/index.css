@@ -74,10 +74,12 @@
 .stories {
   .slick-dots li {
     width: 160px;
+    display: none;
   }
 
   .slick-dots {
     bottom: -85px;
+    visibility: hidden;
   }
 
   .slick-dots .slick-active {
