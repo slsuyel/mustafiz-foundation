@@ -2,9 +2,9 @@ const OtherWays = () => {
   return (
     <div className="container mx-auto mt-14">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
-        <div className="bg-orange p-5 text-center">
+        <div className="bg-orange p-5 text-center text-white">
           <div className="p-5">
-            <i className="fa-regular fa-envelope text-7xl text-black"></i>
+            <i className="fa-regular fa-envelope text-7xl text-white"></i>
             <p className="font-semibold mb-3 text-3xl text-uppercase">
               Send Wire
             </p>
@@ -17,7 +17,7 @@ const OtherWays = () => {
             <p className="font-semibold mb-3">Fax +1 888 557 6068</p>
           </div>
         </div>
-        <div className="bg-orange p-5 text-center">
+        <div className="bg-orange p-5 text-center text-white">
           <div className="p-5">
             <i className="fas fa-money-check-alt text-7xl "></i>
             <p className="font-semibold mb-3 text-3xl text-uppercase">
