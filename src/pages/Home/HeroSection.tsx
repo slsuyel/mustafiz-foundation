@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
-    <section className="container rounded-sm mx-auto relative bg-[url(https://i.ibb.co.com/jJ5J8M0/1.png)] bg-cover bg-center bg-no-repeat">
+    <section className="rounded-sm mx-auto relative bg-[url(https://i.ibb.co.com/jJ5J8M0/1.png)] bg-cover bg-center bg-no-repeat">
       <div className="absolute inset-0 bg-gray-900/75 sm:bg-transparent sm:from-gray-900/95 sm:to-gray-900/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
 
       <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-[calc(100vh-100px)] lg:items-center lg:px-8">
