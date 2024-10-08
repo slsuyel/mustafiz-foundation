@@ -40,7 +40,7 @@ const WhoWeAre = () => {
       </div>
 
       <div className="bg-orange p-5 md:py-20  ">
-        <p className=" text-xl md:text-2xl font-semibold w-[90%] md:w-3/5 mx-auto text-center">
+        <p className=" text-xl md:text-2xl font-semibold w-[90%] md:w-3/5 mx-auto text-center text-white">
           Mustafiz Foundation is the Citizen Development and Social Engineering
           project having a campaign “Better Citizen for a Better Nation, We the
           People, do the best.”
