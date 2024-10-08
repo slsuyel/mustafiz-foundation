@@ -11,7 +11,7 @@ const Footer = () => {
               <h2 className="font-bold text-xl text-orange">
                 Mustafiz Foundation Inc.
               </h2>
-              <p>Frontiers for Humanity</p>
+              <p className='text-[#ED0012]'>Frontiers for Humanity</p>
             </div>
           </Link>
           <p>
@@ -118,11 +118,11 @@ const Footer = () => {
 
       <div className="bg-orange flex gap-20 py-4 text-white justify-center px-4">
         <p className="">
-          © Copyright 2024 Mustafiz Foundation Inc.. All rights reserved.
+          © Copyright 2024 Mustafiz Foundation Inc. All rights reserved.
         </p>
 
         <p>
-          Developed by <Link to={'https://www.zsi.ai'}> ZSI.</Link>{' '}
+          Developed by <Link target='_blank' to={'https://www.zsi.ai'} className='hover:underline hover:text-blue-500 transition-all duration-200'> ZSI.ai</Link>{' '}
         </p>
       </div>
     </div>

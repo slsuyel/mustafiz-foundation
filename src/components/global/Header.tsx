@@ -63,7 +63,7 @@ const Header = () => {
     { label: 'WHERE WE WORK', slug: 'where-we-work' },
     { label: 'GALLERY', slug: 'gallery' },
     { label: 'JOIN OUR TEAM', slug: 'join-us' },
-    { label: 'DONATE', slug: 'donate' },
+    { label: 'Donate', slug: 'donate' },
   ];
 
   return (
@@ -80,10 +80,10 @@ const Header = () => {
               <img src={logo} width={70} alt="Logo" className="" />
 
               <div className="ms-2">
-                <h2 className="text-nowrap font-bold text-base xl:text-lg text-orange">
+                <h2 className="text-nowrap font-bold text-base xl:text-lg text-[#F89509] uppercase">
                   Mustafiz Foundation Inc.
                 </h2>
-                <p className="text-nowrap text-base xl:text-lg">
+                <p className="text-nowrap text-sm xl:text-base text-[#ED0012]">
                   Frontiers for Humanity
                 </p>
               </div>
@@ -105,10 +105,9 @@ const Header = () => {
                   // Menu items with a submenu
                   <button
                     onClick={() => toggleSubMenu(index)}
-                    className={`text-sm md:text-sm  xl:text-lg font-medium md:font-semibold relative flex flex-col group capitalize ${
-                      item.label === 'DONATE' &&
+                    className={`text-sm md:text-sm  xl:text-lg font-medium md:font-semibold relative flex flex-col group capitalize hover:text-orange transition-all duration-200 ${item.label === 'Donate' &&
                       'bg-orange text-white px-2 xl:px-6 py-2 hover:text-white rounded-sm'
-                    }`}
+                      }`}
                   >
                     <span>
                       {item.label}{' '}
@@ -128,18 +127,11 @@ const Header = () => {
                   <Link
                     to={`/${item.slug || '#'}`}
                     onClick={handleMenuClick} // Close menu and submenu after click
-                    className={`text-sm xl:text-lg font-medium md:font-semibold relative flex flex-col group capitalize ${
-                      item.label === 'DONATE' &&
-                      'bg-orange text-white px-6 py-2 hover:text-white rounded-sm'
-                    }`}
+                    className={`text-sm xl:text-lg font-medium md:font-semibold relative flex flex-col group  capitalize ${item.label === 'Donate' ?
+                      'bg-orange text-white px-6 py-2 hover:text-white rounded-sm hover:bg-gray-900 transition-all duration-200' : 'hover:text-orange transition-all duration-200'
+                      }`}
                   >
                     <span>{item.label}</span>
-                    <span
-                      className={cn(
-                        'h-[1px] bg-white w-0 group-hover:w-full transition-all duration-300',
-                        isScrolled && 'bg-zinc-700'
-                      )}
-                    ></span>
                   </Link>
                 )}
 

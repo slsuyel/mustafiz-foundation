@@ -10,7 +10,7 @@ export default {
         sm: 'calc(var(--radius) - 4px)',
       },
       colors: {
-        orange: '#F89509',
+        orange: '#E89E1E',
       },
     },
   },

@@ -7,8 +7,8 @@ import ScrollToTop from '../global/ScrollToTop';
 const MainLayout = () => {
   return (
     <ScrollToTop>
-      <div className="px-2 bg-orange">
-        <p className="container mx-auto text-white sm:px-4 font-semibold text-center text-lg py-4 ">
+      <div className="px-2 bg-[#F89509]">
+        <p className="container mx-auto text-white sm:px-4 font-medium text-center py-2 md:py-2.5 text-sm md:text-base">
           We will be good citizens for a better tomorrow, for a better world.
         </p>
       </div>
