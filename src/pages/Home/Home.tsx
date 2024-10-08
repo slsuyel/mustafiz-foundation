@@ -10,7 +10,7 @@ import YourDonationMatter from './YourDonationMatter';
 
 const Home = () => {
   return (
-    <div className="mt-5  mb-10">
+    <div className=" mb-10">
       <HeroSection />
       <WhoWeAre />
       <DonateNow />

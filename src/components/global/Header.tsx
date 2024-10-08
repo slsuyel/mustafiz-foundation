@@ -70,7 +70,7 @@ const Header = () => {
     <>
       <header
         className={cn(
-          ' mx-auto flex items-center sticky top-0 py-3 px-3 border-b z-[999] transition-colors duration-300 bg-white',
+          ' mx-auto flex items-center sticky top-0 py-3.5 px-3 z-[999] transition-colors duration-300 bg-white',
           isScrolled ? 'py-2 ' : ''
         )}
       >
